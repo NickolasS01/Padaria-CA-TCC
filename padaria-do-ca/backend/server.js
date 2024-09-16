@@ -13,7 +13,7 @@ const db = mysql.createConnection({
 
 app.get('/', (req, res) => {
   db.query(
-    "INSERT INTO usuari (nomeCompleto, telefone, curso, turma, turno, email, senha) VALUES ('Cauã Corrêa', '910346461', 'Desenvolvimento', 'Turma A', 'Manhã', 'caua@example.com', 'minhaSenhaSegura')",
+    "INSERT INTO usuario (nomeCompleto, telefone, curso, turma, turno, email, senha) VALUES ('Cauã Corrêa', '910346461', 'Desenvolvimento', 'Turma A', 'Manhã', 'caua@example.com', 'minhaSenhaSegura')",
     (err, result) => {
       if (err) {
         console.error(err);
@@ -38,7 +38,7 @@ db.connect((err) => {
 
 app.post('/cadastro', (req, res) => {
   const { nomeCompleto, telefone, curso, turma, turno, email, senha } = req.body;
-  const sql = 'INSERT INTO usuarios (nomeCompleto, telefone, curso, turma, turno, email, senha) VALUES (?, ?, ?, ?, ?, ?, ?)';
+  const sql = 'INSERT INTO usuario (nomeCompleto, telefone, curso, turma, turno, email, senha) VALUES (?, ?, ?, ?, ?, ?, ?)';
   
   db.query(sql, [nomeCompleto, telefone, curso, turma, turno, email, senha], (err, result) => {
     if (err) {
@@ -52,7 +52,7 @@ app.post('/cadastro', (req, res) => {
 app.post('/login', (req, res) => {
   const { email, senha } = req.body;
 
-  const sql = 'SELECT * FROM usuarios WHERE email = ?';
+  const sql = 'SELECT * FROM usuario WHERE email = ?';
   
   db.query(sql, [email], async (err, results) => {
     if (err) {
