@@ -2,6 +2,7 @@ import NavMenu from "../NavMenu/NavMenu";
 import "./Bebidas.css"
 import bebidas from "../Imagens/bebidas.png"
 import Refris from "../Bebidas/refris"
+
 function Bebidas(){
     return(
 
@@ -18,7 +19,7 @@ function Bebidas(){
             
             </div>
 
-            <img id="Latas" src={bebidas} alt="legenda"/>
+            <img id="Latas1" src={bebidas} alt="legenda"/>
             
             
             

@@ -3,4 +3,10 @@
     width: 40%;
     transform: translate(25%,7%);
     
+    @media(max-width: 1920px ){ 
+        transform: scale(0.9);  
+        margin-right: 120px;
+        margin-top: 70px;
+    
+    }
 }

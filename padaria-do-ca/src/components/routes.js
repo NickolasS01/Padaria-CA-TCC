@@ -4,6 +4,7 @@ import Bebidas from "../Bebidas/bebidas";
 import Login from "../Login/login";
 import Cadastro from "../Cadastro/App"
 import Compotas from "../Bebidas/Compotas"
+import LandingPage from "../LandingPage/LandingPage";
 
    
 
@@ -11,7 +12,8 @@ import Compotas from "../Bebidas/Compotas"
 function MainRoutes(){
     return(
         <Routes> 
-            <Route path="/" element={<TelaInicial/>} />
+            <Route path="/" element={<LandingPage/>} />
+            <Route path="/Menu" element={<TelaInicial/>} />
             <Route path="/Bebidas" element={<Bebidas/>} />
             <Route path="/Login" element={<Login/>} />
             <Route path="/Cadastro" element={<Cadastro/>} />

@@ -1,0 +1,159 @@
+@font-face {
+    font-family: PlayFairDisplay;
+    src: url(../../public/PlayfairDisplay-Medium.ttf);
+}
+@font-face {
+    font-family: Lora;
+    src: url(../../public/Lora-Medium.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../../public/Raleway-VariableFont_wght.ttf);
+}   
+#wrap-backgrund{
+    width: 100vw;
+    height: 95vh;
+    background-image: url(../Imagens/Backgrund3.jpg);
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    z-index: -1;
+    
+    
+    
+}
+#landing-page-text1{
+    margin-top: 45px;
+    width: 100%;
+font-family: Raleway;
+color: white;
+font-size: 35px;
+text-align: center;
+}
+#camargo{
+    font-family: PlayFairDisplay;
+    font-weight: 100;
+    font-size: 84px;
+    color: #ffffff;
+}
+#padaria{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+#wrap-second-part{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+#landing-page-text2{
+    
+    margin-top: 43px;
+    padding: 50px;
+    width: 500px;
+
+    color: aliceblue;
+}
+#landing-page-text2 p{
+    margin-top: 20px;
+    
+}
+  
+.Img1{
+    
+    height: 300px;
+}
+.box-1{
+    background: url(../Imagens//RefrigeranteLandPage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 380px;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    text-align: center;
+    
+    
+    
+    
+}
+#text1{
+    
+    width: 200px;
+    margin-top: 200px;
+    justify-content: bottom;
+    font-family: Raleway;
+    color: aliceblue;
+    text-align: center;
+    font-size: 17px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.para{
+    text-align: center;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: Raleway;
+    font-weight: 300;
+    color: #EEEEEE;
+    
+}
+.Nomes{
+    font-family: Lora;
+    font-size: 25px;
+    font-weight: 400;
+    
+}
+
+.box-2{
+    background: url(../Imagens//LandpageDog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 380px;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+.box-3{
+    background: url(../Imagens//CompotaLandPage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 380px;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+#SubTítulo{
+    font-size: 29px;
+    font-weight: 325;
+    font-family: Lora;
+    color: #D2A679;
+}
+.Corpo{
+    color: #EEEEEE;
+    font-weight: 350;
+    font-size: 15px;
+    font-family: Raleway;
+}
+#btn{
+    height: 40px;
+    width: 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 17px;
+    border-style: none;
+    transform: translate(35%, -230%);
+}

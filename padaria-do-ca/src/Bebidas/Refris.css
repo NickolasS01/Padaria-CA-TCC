@@ -41,6 +41,32 @@ h3{
     transform: scale(1.1);
     
 }
+#Fanta{
+    
+    width: 90px;
+    margin-left: 56px;
+}
+#Guarana{
+    height: 200px;
+    margin-bottom: -19px;
+    margin-top: -20px;
+}
+#Coca_texto{
+    font-size: 15px;
+    transform: scale(1.2);
+    margin-top: 25px;
+}
+#Fanta-Letra{
+   margin-top: 25px;
+    font-size: 15px;
+    transform: scale(1.2);
+    
+}
+#Guarana_texto{
+    font-size: 15px;
+    transform: scale(1.2);
+    margin-top: 25px;
+}
 
 .Latas{
     height: 151px;
@@ -126,6 +152,6 @@ h3{
     background-color: rgb(255, 255, 255);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(0, 0, 0);
+    background-color: #383736;
     
 }

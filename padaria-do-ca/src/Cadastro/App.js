@@ -1,10 +1,10 @@
-// frontend/src/App.js
 import React, { useState } from 'react';
 import './App.css';
 import NavMenu from '../NavMenu/NavMenu';
-import {Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Importando useNavigate
 
 function App() {
+  const navigate = useNavigate(); // Criando a instância de navigate
   const [formData, setFormData] = useState({
     nomeCompleto: '',
     telefone: '',
@@ -35,7 +35,7 @@ function App() {
     }
 
     try {
-      const response = await fetch('http://localhost:3005/cadastro', {
+      const response = await fetch('http://localhost:3006/auth/cadastro', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -56,6 +56,10 @@ function App() {
         confirmaSenha: ''
       });
       setError('');
+
+      // Redirecionar para a página de login após o cadastro bem-sucedido
+      navigate('/login'); // Redireciona para a página de login
+
     } catch (error) {
       console.error('Erro ao enviar o formulário:', error);
       alert('Houve um problema ao enviar o formulário.');
@@ -143,8 +147,7 @@ function App() {
                 onChange={handleChange}
                 required />
             </div>
-            <button id="submit-button" className="btn" type="submit">
-              <Link to="/Login">Continuar </Link>
+            <button id="submit-button" className="btn" type="submit">Continuar
               </button>
           </form>
         </div>
