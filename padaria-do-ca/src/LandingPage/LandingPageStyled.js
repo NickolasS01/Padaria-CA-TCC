@@ -1,19 +1,16 @@
-@font-face {
-    font-family: PlayFairDisplay;
-    src: url(../../public/PlayfairDisplay-Medium.ttf);
-}
-@font-face {
-    font-family: Lora;
-    src: url(../../public/Lora-Medium.ttf);
-}
-@font-face {
-    font-family: Raleway;
-    src: url(../../public/Raleway-VariableFont_wght.ttf);
-}   
+import PlanoDeFundo from "../Imagens/Backgrund3.jpg"
+import img1 from "../Imagens/RefrigeranteLandPage.jpg"
+import img2 from "../Imagens/LandpageDog.jpg"
+import img3 from "../Imagens/CompotaLandPage.jpg"
+import styled from "styled-components"
+import breakpoints from "../components/breakpoints"
+export const Wrapper = styled.section`
+
+
 #wrap-backgrund{
     width: 100vw;
     height: 95vh;
-    background-image: url(../Imagens/Backgrund3.jpg);
+    background-image: url(${PlanoDeFundo});
     background-size: cover;
     opacity: 1;
     position: absolute;
@@ -35,11 +32,20 @@ text-align: center;
     font-weight: 100;
     font-size: 84px;
     color: #ffffff;
+    @media ${breakpoints.exm}{
+        
+        transform: scale(1.1);
+    }
+
 }
 #padaria{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 100;
     font-size: 30px;
+    @media ${breakpoints.exm}{
+        
+        transform: scale(1.1);
+    }
 }
 #wrap-second-part{
     display: flex;
@@ -47,12 +53,14 @@ text-align: center;
     margin-right: 50px;
 }
 #landing-page-text2{
-    
     margin-top: 43px;
     padding: 50px;
     width: 500px;
-
     color: aliceblue;
+    @media ${breakpoints.exm}{
+        margin-top: 83px;
+        transform: scale(1.2);
+    }
 }
 #landing-page-text2 p{
     margin-top: 20px;
@@ -64,7 +72,7 @@ text-align: center;
     height: 300px;
 }
 .box-1{
-    background: url(../Imagens//RefrigeranteLandPage.jpg);
+    background: url(${img1});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -77,7 +85,10 @@ text-align: center;
     border-style: solid;
     text-align: center;
     
-    
+    @media ${breakpoints.exm}{
+        margin-top: 140px;
+        transform: scale(1.2);
+    }
     
     
 }
@@ -112,7 +123,7 @@ text-align: center;
 }
 
 .box-2{
-    background: url(../Imagens//LandpageDog.jpg);
+    background: url(${img2});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -123,9 +134,14 @@ text-align: center;
     margin-top: 100px;
     border-color: rgb(255, 255, 255);
     border-style: solid;
+
+    @media ${breakpoints.exm}{
+        transform: scale(1.2);
+        margin-top: 140px;
+    }
 }
 .box-3{
-    background: url(../Imagens//CompotaLandPage.jpg);
+    background: url(${img3});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -136,6 +152,10 @@ text-align: center;
     margin-top: 100px;
     border-color: rgb(255, 255, 255);
     border-style: solid;
+    @media ${breakpoints.exm}{
+        transform: scale(1.2);
+        margin-top: 140px;
+    }
 }
 #SubTítulo{
     font-size: 29px;
@@ -152,8 +172,26 @@ text-align: center;
 #btn{
     height: 40px;
     width: 150px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: sans-serif;
+    font-size: 15px;
     border-radius: 17px;
     border-style: none;
-    transform: translate(35%, -230%);
+    transform: translate(75%, -230%);
+    from {
+    transform: scale(1.0);
+    }
+    to {
+    transform: scale(1.1);
+  }
+    @media ${breakpoints.exm}{
+        height: 50px;
+        width: 190px;
+        transform: translate(40%, -150%);
+        
+    }
+    
 }
+
+
+
+`

@@ -1,10 +1,13 @@
-import NavMenu from "../NavMenu/NavMenu";
-import "./LandingPage.css"
-import SobreNos from "../components/SobreNos";
+import NavMenu from "../NavMenu/NavMenu.js";
+import SobreNos from "../components/SobreNos.js";
+import {Wrapper} from "./LandingPageStyled.js"
+import breakpoints from "../components/breakpoints.js";
 function LandingPage(){
     return(
         <>
+        
         <NavMenu />
+        <Wrapper>
         <div id="wrap-backgrund"> 
             <div id="landing-page-text1">
                 <h1 id="camargo">Padaria do Camargo</h1>
@@ -27,8 +30,8 @@ function LandingPage(){
 
         
 
-        <SobreNos/>
-
+        
+        </Wrapper>
         </>
     )
     

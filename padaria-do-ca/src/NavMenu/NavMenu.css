@@ -32,7 +32,7 @@ ul{
     
 }
 #Categorias{
-    transform: translateX(50%);
+    transform: translateX(90%);
     display: flex;
     justify-content: center;
 }
@@ -65,6 +65,7 @@ li a{
     @media(max-width: 1920px ){ 
         font-size: 22px;
     }
+    text-align: center;
 }
 li a:hover{
     text-decoration: underline;
