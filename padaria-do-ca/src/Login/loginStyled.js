@@ -1,3 +1,6 @@
+const { default: styled } = require("styled-components");
+
+const LoginStyled = styled.section`
 #Corpo {
   margin: 0;
   padding: 0;
@@ -58,4 +61,5 @@
 .form-error {
   color: red;
   font-size: 12px;
-}
+}`
+export default LoginStyled;

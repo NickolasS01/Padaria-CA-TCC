@@ -1,12 +1,12 @@
 import PersonIcon from "../Imagens/do-utilizador.png"
 import Carrinho from "../Imagens/carrinho-de-compras.png"
-import "../NavMenu/NavMenu.css"
 import Logo from "../NavMenu/LogoPadaria.png"
 import {BrowserRouter as Router, Routes, Route, Link, BrowserRouter} from 'react-router-dom'
 import config from "../../src/Imagens/setting.png"
 import perfil from "../Imagens/profile.png"
 import help from "../Imagens/help.png"
 import logout from "../Imagens/logout.png"
+import StyledMenu from "./NavMenuStyled"
 
 import React, {useState} from 'react';
 
@@ -18,6 +18,7 @@ function NavMenu (){
     const [open, setOpen] = useState(false);
 
     return(
+        <StyledMenu>
         <header> 
             
             
@@ -74,6 +75,7 @@ function NavMenu (){
         
      
         </header>
+        </StyledMenu>
        
        
     )

@@ -1,14 +1,17 @@
+import breakpoints from "../components/breakpoints";
+
+const { default: styled } = require("styled-components");
+
+const StyledMenu = styled.header`
 @font-face {
     font-family: Poppins;
     src: url(../../public/Poppins-Medium.ttf);
 }
 .Logo{
-    height: 50px;
-    width: 80px;
-    margin: 15px;
-    @media(max-width: 390px ){ 
-        height: 40px;
-    width: 60px;
+    
+    @media ${breakpoints.exm}{ 
+        height: 60px;
+    width: 100px;
     margin: 15px;
         
     }
@@ -19,9 +22,12 @@ header{
     height: 80px;
     display: flex;
     justify-content: space-between;
-    @media(max-width: 1920px ){ 
-        height: 85px;
-        
+    @media ${breakpoints.exm}{ 
+    background-color: #FFF2D9;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
     }
     
     
@@ -35,6 +41,12 @@ ul{
     transform: translateX(90%);
     display: flex;
     justify-content: center;
+
+    @media ${breakpoints.exm}{ 
+    transform: translateX(100%);
+    display: flex;
+    justify-content: center;
+    }
 }
 li{
     
@@ -160,3 +172,5 @@ font-weight: 600;
     transform: translateY(0);
     transition: var(--speed) ease;
 }
+`
+export default StyledMenu;

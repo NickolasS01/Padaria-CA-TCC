@@ -24,8 +24,10 @@ export const Wrapper = styled.section`
     width: 100%;
 font-family: Raleway;
 color: white;
-font-size: 35px;
+font-size:35px;
 text-align: center;
+
+
 }
 #camargo{
     font-family: PlayFairDisplay;
@@ -35,6 +37,10 @@ text-align: center;
     @media ${breakpoints.exm}{
         
         transform: scale(1.1);
+    }
+    @media ${breakpoints.bm}{
+        
+        transform: scale(0.96);
     }
 
 }
@@ -46,11 +52,26 @@ text-align: center;
         
         transform: scale(1.1);
     }
+     @media ${breakpoints.bm}{
+        
+        transform: scale(0.96);
+    }
+   
 }
 #wrap-second-part{
     display: flex;
     justify-content: space-around;
-    margin-right: 50px;
+    margin-right: -0px;
+    @media ${breakpoints.bm}{
+        margin-right: 10px; 
+        
+    }
+    @media ${breakpoints.bm2}{
+        margin-right: -10px; 
+        
+    }
+    
+    
 }
 #landing-page-text2{
     margin-top: 43px;
@@ -60,6 +81,10 @@ text-align: center;
     @media ${breakpoints.exm}{
         margin-top: 83px;
         transform: scale(1.2);
+    }
+    @media ${breakpoints.bm}{
+        margin-top: 83px;
+        transform: scale(1.1);
     }
 }
 #landing-page-text2 p{
@@ -89,6 +114,16 @@ text-align: center;
         margin-top: 140px;
         transform: scale(1.2);
     }
+    @media ${breakpoints.bm}{
+        
+        transform: scale(1.1);
+    }
+    @media ${breakpoints.bm2}{
+        
+        transform: scale(1.07);
+        
+    }
+    
     
     
 }
@@ -139,6 +174,15 @@ text-align: center;
         transform: scale(1.2);
         margin-top: 140px;
     }
+    @media ${breakpoints.bm}{
+        
+        transform: scale(1.1);
+    }
+    @media ${breakpoints.bm2}{
+        
+        transform: scale(1.07);
+        
+    }
 }
 .box-3{
     background: url(${img3});
@@ -155,6 +199,15 @@ text-align: center;
     @media ${breakpoints.exm}{
         transform: scale(1.2);
         margin-top: 140px;
+    }
+    @media ${breakpoints.bm}{
+        
+        transform: scale(1.1);
+    }
+    @media ${breakpoints.bm2}{
+        
+        transform: scale(1.07);
+        
     }
 }
 #SubTítulo{

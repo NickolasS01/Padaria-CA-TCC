@@ -1,6 +1,6 @@
 // frontend/src/Login.js
 import React, { useState } from 'react';
-import './login.css';
+import LoginStyled from "../Login/loginStyled"
 import NavMenu from '../NavMenu/NavMenu';
 import {Link} from "react-router-dom";
 
@@ -38,7 +38,9 @@ function Login() {
   };
 
   return (
-    <><NavMenu /><container id="Corpo">
+    <><NavMenu />
+    <LoginStyled>
+    <container id="Corpo">
 
       <div id="login-container">
         <div id="login-form-box">
@@ -69,7 +71,10 @@ function Login() {
           </form>
         </div>
       </div>
-    </container></>
+    </container>
+    </LoginStyled>
+    </>
+    
     
   );
 }
